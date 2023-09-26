@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  </head>
+  <body>
+	  	<p>Xin chào <b><span th:text="${name}"></span></b>, </p>
+ 		<p>Xin thông báo lịch tập của ngày hôm nay là:   </p>
+ 		<table>
+			 <thead>
+				 <tr>
+				      <th scope="col">Bài tập</th>
+				      <th scope="col">Số rep</th>
+				      <th scope="col">Số set</th>
+				       
+				 </tr>
+			</thead>
+			<tbody>
+				<tr th:each="item : ${exercies}">
+				      <td th:text=${item}/> 
+				      <td >8</td> 
+				      <td >4</td>
+				</tr>
+			</tbody>
+		</table>
+  </body>
+</html>
